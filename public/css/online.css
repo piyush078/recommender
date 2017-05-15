@@ -1,0 +1,111 @@
+#song-player-block, #song-player-block * {
+    margin:0;
+    padding:0;
+}
+
+#song-player-block {
+    background: rgba(255,255,255,0.7);
+    margin-bottom: 10px;
+    color:black;
+}
+
+#show-rec {
+    cursor: pointer;
+    float: right;
+    background: transparent;
+}
+
+#show-rec img {
+    height: 20px;
+}
+
+#song-player-block #song-img img {
+    width:100%;
+    border:1px solid #000;
+}
+
+#song-player-block #song-controller {
+    display: inline;
+    padding-left:20px;
+}
+
+#song-player-block #song-controller #song-info-artist {
+    margin-top:-5px;
+    margin-bottom: 15px;
+}
+
+#song-review img {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    #song-player-block {
+        padding:20px;
+    }
+
+    #show-rec img {
+        margin-top:-10px;
+        margin-right: -20px;
+    }
+
+    #song-player-block #song-controller #song-info-name {
+        font-size: 40px;
+    }
+
+    #song-player-block #song-controller #song-info-artist {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+    #song-player-block #song-controller #song-info-name {
+        font-size: 30px;
+    }
+
+    #song-player-block #song-controller #song-info-artist {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    #song-player-block #song-controller #song-info-name {
+        font-size: 26px;
+    }
+
+    #song-player-block #song-controller #song-info-artist {
+        font-size: 22px;
+    }
+
+    #song-review img {
+        width:40px;
+        height: 40px;
+    }
+
+    #song-review img.like {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 991px) {
+    #song-player-block {
+        padding:10px;
+    }
+
+    #show-rec img {
+        margin-top:-10px;
+        margin-right: -12px;
+    }
+}
+
+@media (min-width: 769px) {
+    #song-review img {
+        width:55px;
+        height: 55px;
+    }
+
+    #song-review img.like {
+        width: 60px;
+        height: 60px;
+    }
+}

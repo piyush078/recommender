@@ -1,0 +1,54 @@
+.songs-list-wrapper {
+    background: rgba(0,0,0,0.6);
+    clear:both;
+    float:left;
+    width:100%;
+}
+
+.songs-list-wrapper .header {
+    margin:0 80px;
+    padding:10px 20px;
+    font-size: 30px;
+    text-align: left;
+    background: #fff;
+    color:#000;
+    border-radius: 5px;
+}
+
+.songs-list-wrapper .songs-list {
+    list-style: none;
+    margin: 5px 60px 5px 80px;
+}
+
+.songs-list-wrapper .songs-list li {
+    background: #fff;
+    color:#000;
+    padding:10px;
+    float: left;
+    width:564px;
+    margin-right:20px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.songs-list-wrapper .songs-list li div {
+    text-align: left;
+}
+
+.songs-list-wrapper .songs-list li div.rec-img img {
+    width:40px;
+    height:40px;
+    float: left;
+}
+
+.songs-list-wrapper .songs-list li div.rec-name {
+    font-size: 20px;
+}
+
+.songs-list-wrapper .songs-list li div.rec-name, .songs-list-wrapper .songs-list li div.rec-artist {
+    margin-left:60px;
+    width:500px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

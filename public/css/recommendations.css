@@ -1,0 +1,96 @@
+.rec_block, .rec_block * {
+	margin:0;
+	padding: 0;
+    color: black;
+}
+
+.rec_block:nth-child(1) {
+    margin-left:0;
+}
+
+.rec_block {
+	cursor: pointer;
+}
+
+.rec_block, .instr {
+	background: rgba(255,255,255,0.7);
+	margin-bottom: 10px;
+    color:black;
+	border: 0;
+	padding:5px 10px;
+}
+
+.instr {
+    width:100%;
+    font-size: 18px;
+    padding:10px 20px;
+}
+
+.rec_block .img {
+    float: left;
+}
+
+@media (min-width: 992px) {
+    .rec_block img {
+		width:45px;
+		height:45px;
+	}
+
+    .rec_block .info {
+        margin-left:55px;
+    }
+
+	.rec_block .name {
+		font-size: 21px;
+	}
+
+	.rec_block .artist {
+		font-size: 17px;
+	}
+}
+
+@media (max-width: 991px) {
+	.rec_block img {
+		width:40px;
+		height:40px;
+	}
+
+	.rec_block .info {
+        margin-left:50px;
+    }
+
+    .rec_block .name {
+		font-size: 19px;
+	}
+
+	.rec_block .artist {
+		font-size: 15px;
+	}
+}
+
+@media (min-width: 769px) {
+	.rec_block {
+        position: relative;
+		width:48%;
+		float: left;
+	}
+
+	.rec_block:nth-child(odd) {
+		clear: both;
+		margin-right: 2%;
+	}
+
+	.rec_block:nth-child(even) {
+		margin-left: 2%;
+	}
+}
+
+@media (max-width: 768px) {
+    .rec_block {
+        width:100%;
+        float: left;
+        clear: both;
+        margin-left:0;
+        margin-right: 0;
+    }
+}

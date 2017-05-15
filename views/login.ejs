@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <%- metadata.replace("<< whatyalisten >>", '<link href="css/form.css" rel="stylesheet">') -%>
+    </head>
+    <body>
+        <header id="top" class="header">
+            <%- navbar.replace("<< replace_links >>", '<li><a href="signup">Sign up</a></li><li><a href="login">Log in</a></li>') -%>
+            <div id="middle">
+                <div class="wrapper">
+                    <div class="form-header">Login Here</div>
+                    <div class="form-sub">Please provide your Email Address and Password.</div>
+                    <div class="form">
+                        <input type="email" id="email" name="email" placeholder="Enter Email Address" />
+                        <input type="password" id="password" name="password" placeholder="Enter Password" />
+                        <input type="submit" class="btn btn-sm" value="Log in" id="login-but" />
+                    </div>
+                    <div class="form-sub feedback"></div>
+                </div>
+            </div>
+        </header>
+        <script type="text/javascript" src="script/login.js"></script>
+    </body>
+</html>

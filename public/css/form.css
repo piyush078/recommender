@@ -1,0 +1,50 @@
+.wrapper {
+     background: white;
+     border-radius: 5px;
+     padding: 10px 20px 10px 20px;
+     color: black;
+}
+
+form {
+     margin: 0;
+     padding: 0;
+}
+
+.form-header {
+     font-family: "Lato", sans-serif;
+     font-size: 30px;
+}
+
+.form-sub, .feedback {
+     font-size: 15px;
+}
+
+.feedback {
+     text-align: left;
+     margin-top: 10px;
+}
+
+.wrapper .form input {
+     display: block;
+     width: 100%;
+}
+
+input {
+     margin-top: 5px;
+     padding: 3px 10px;
+     font-size: 15px;
+     border-radius: 0;
+}
+
+@media (min-width: 759px) {
+     .wrapper {
+          width:60%;
+          margin-left: 20%;
+     }
+}
+
+@media (max-width: 768px) {
+     .wrapper {
+          width: 100%;
+     }
+}

@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <%- metadata.replace("<< whatyalisten >>", '<link href="css/form.css" rel="stylesheet">') -%>
+    </head>
+    <body>
+        <header id="top" class="header">
+            <%- navbar.replace("<< replace_links >>", '<li><a href="signup">Sign up</a></li><li><a href="login">Log in</a></li>') -%>
+            <div id="middle">
+                <div class="wrapper">
+                    <div class="form-header">Register Here</div>
+                    <div class="form-sub">To signup for free please provide some information. Please provide valid credentials.</div>
+                    <form id="register" class="form" method="POST" action="process/register">
+                        <input type="text" id="name" name="name" placeholder="Enter Name" />
+                        <input type="email" id="email" name="email" placeholder="Enter Email Address" />
+                        <input type="password" id="password" name="password" placeholder="Enter Password" />
+                        <input type="submit" class="btn btn-sm" value="Register" id="register-but" />
+                    </form>
+                    <div class="form-sub feedback"></div>
+                </div>
+            </div>
+        </header>
+    </body>
+</html>

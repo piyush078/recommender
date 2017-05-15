@@ -1,0 +1,39 @@
+#search-result {
+    position: absolute;
+    cursor: pointer;
+    top:60;
+    left:0;
+    width:100%;
+    z-index: 999;
+}
+
+#search-result ul li:nth-child(1) {
+    border-top: 1px solid #fff;
+}
+
+#search-result ul li {
+    padding:10px 20px;
+    background: rgba(49,49,45,0.8);
+    color:#fff;
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+}
+
+#search-result ul li div.search-img, #search-result ul li div.search-info {
+    float: left;
+}
+
+#search-result ul li img {
+    width:50px;
+    margin-right:10px;
+    height:50px;
+}
+
+#search-result ul li div .prop, #search-result ul li div .value {
+    font-size: 15px;
+}
+
+#search-result ul li div .prop {
+    font-weight: 700;
+}

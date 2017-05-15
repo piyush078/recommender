@@ -1,0 +1,155 @@
+body {
+    overflow-x:hidden !important;
+}
+
+#open-list img {
+    width:60px;
+}
+
+#open-list {
+    position: absolute;
+    right:0;
+    top:100;
+}
+
+#footer {
+    position: fixed;
+    padding: 5px 10px 10px 10px;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 998;
+    background: rgba(49,49,45,0.5);
+}
+
+#offline-queue {
+    isplay: none;
+    height:100%;
+    position: absolute;
+    top:0;
+    right:0;
+    background: rgba(49,49,45,0.9);
+    z-index: 0;
+    overflow: hidden;
+}
+
+.transition {
+    transition: margin-right 0.7s;
+}
+
+.queue-header {
+    clear: both;
+    font-size: 18px;
+    margin-top:10px;
+    background: rgba(255,255,255,0.6);
+    padding:3px 20px;
+    text-align: center;
+}
+
+#offline-queue .queue-ele {
+    font-size: 17px;
+    padding: 3px 20px;
+    cursor: pointer;
+    border-bottom:1px solid rgba(255,255,255,0.5);
+}
+
+.queue-top {
+    margin:10px 20px;
+    clear: both;
+}
+
+.offline-name {
+    font-size: 25px;
+}
+
+.show-counter {
+    padding:0 20px;
+    clear: both;
+    font-size: 16px;
+    display: block;
+}
+
+#offline-queue .offline-but {
+    margin-top: 10px;
+}
+
+.offline-but .stop, .offline-but .shuffle, .offline-but .repeat, .offline-but .add {
+    margin-top: 5px;
+    float: right;
+    margin-left: 5px;
+}
+
+#timer-bar {
+    position: fixed;
+    bottom: 0;
+    padding:0;
+    left: 0;
+    cursor: pointer;
+    transition: all 0.5s;
+    width:100%;
+}
+
+#timer-bar:hover {
+    border-top:1px solid #fff;
+    height:10px;
+}
+
+#progress-bar {
+    background: #00aaff;
+    width:0;
+    height: 5px;
+}
+
+.offline-but img {
+    width:40px;
+    float: left;
+}
+
+.add {
+    width:40px;
+    float: right;
+}
+
+.offline-but .left, .offline-but .right {
+    width:35px;
+    margin-top: 8px;
+}
+
+.offline-but .play, .offline-but .pause {
+    margin-left:-76px;
+    width: 50px;
+}
+
+.offline-but .right {
+    margin-left: 30px;
+}
+
+#footer .offline-but .left, #footer .offline-but .right {
+    margin-top: -6px;
+}
+
+#footer .offline-but .play, #footer .offline-but .pause {
+    margin-top:-30px;
+}
+
+@media (min-width: 992px) {
+    #offline-queue {
+        width:40%;
+        margin-right: -40%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+    #offline-queue {
+        width:50%;
+        margin-right: -50%;
+    }
+}
+
+@media (max-width: 768px) {
+    #offline-queue {
+        width: 100%;
+        margin-right:-100%;
+    }
+}

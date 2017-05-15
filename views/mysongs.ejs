@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title><%= session.name %></title>
+        <%- metadata.replace("<< whatyalisten >>", '<link href="css/user.css" rel="stylesheet"><link href="css/online.css" rel="stylesheet"><link href="css/search.css" rel="stylesheet"><link href="css/recommendations.css" rel="stylesheet"><link href="css/offline.css" rel="stylesheet">') -%>
+    </head>
+    <body>
+        <header id="top" class="header">
+            <%- navbar.replace("<< replace_links >>", '<li><a id="search-opt">Search</a></li><li><a href="home">Home</a></li><li><a href="logout">Logout</a></li>') -%>
+            <div id="search-input"><input type="text" id="search" placeholder="Search" /><a class="close" style="font-size:30px; color:#fff">&#215</a></div>
+            <div id="search-result"><ul></ul></div>
+            <div id="middle">
+                <div class="blocks_head"><ul><li class="active" hide="block_1">My Songs</li><li hide="block_2">Listen<div id="show-rec"><img src="https://cdn2.iconfinder.com/data/icons/flat-ui-2/512/ui1-39-128.png" /></div></li></ul></div>
+                <div class="blocks">
+                    <ul><li id="block_1">
+                        <div id="my-songs"></div>
+                    </li>
+                    <li id="block_2" style="display:none;">
+                        <div id="song-player-block" class="container-fluid">
+                            <div id="song-img" class="col-lg-2 col-sm-2 col-xs-3 col-md-2"><img src="" /></div>
+                            <div id="song-controller" class="col-lg-10 col-sm-10 col-xs-9 col-md-10">
+                                <div id="song-info-name"><&nbsp;No Song&nbsp;></div>
+                                <div id="song-info-artist"><&nbsp;No Artist&nbsp;></div>
+                                <div id="song-review">
+                                    <img class="like" title="Like it ?" src="http://i.imgur.com/V5SJPrd.png" alt="Like ?" />
+                                    <img class="liked" title="Liked the song" src="https://openclipart.org/image/800px/svg_to_png/215532/1425710397.png" alt="Liked" style="background:white; border-radius:30px" />
+                                    <a id="song-play" href="#" target='_blank'><img class="play" title="Play the song" src='http://www.clipartbest.com/cliparts/Mdi/7gq/Mdi7gq5c9.png' alt='Play' /></a>
+                                </div>
+                                <div id="song-redirect"></div>
+                                <input type="hidden" id="song-link" value="" />
+                                <input type="hidden" id="song-small-img" value="" />
+                            </div>
+                        </div>
+                        <div id="on-song-rec" style="display:none"><div class="instr" style="font-size:25px;">No Recommendations</div></div>
+                    </li></ul>
+                </div>
+                <div class="instr" id="off-rec-header" style="display:none; clear:both; font-size:30px;">Offline Recommendations</div>
+                <div id="off-rec"></div>
+            </div>
+            <div id="open-list"><img src="https://cdn4.iconfinder.com/data/icons/origamicon-colorful/512/arrow-undo-128.png" title="Open Queue" alt="Queue" /></div>
+            <%- offline %>
+        </header>
+        <script type="text/javascript" src="script/message.js"></script>
+        <script type="text/javascript" src="script/recommendations.js"></script>
+        <script type="text/javascript" src="script/user.js"></script>
+        <script type="text/javascript" src="script/mysongs.js"></script>
+        <script type="text/javascript" src="script/search.js"></script>
+        <script type="text/javascript" src="script/offline.js"></script>
+    </body>
+</html>

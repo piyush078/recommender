@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <%- metadata.replace("<< whatyalisten >>", '<link href="css/index.css" rel="stylesheet">') -%>
+    </head>
+    <body>
+        <header id="top" class="header">
+            <%- navbar.replace("<< replace_links >>", '<li><a href="signup">Sign up</a></li><li><a href="login">Log in</a></li>') -%>
+            <div id="middle">
+                <div style="background:rgba(49,49,49,0.6); padding:20px 0;">
+                    <h1 class="middle-head">Music Recommender System</h1>
+                    <a href="signup" class="btn btn-dark btn-lg">Sign up</a>
+                    <a href="login" class="btn btn-dark btn-lg">Log in</a>
+                </div>
+            </div>
+        </header>
+    </body>
+</html>

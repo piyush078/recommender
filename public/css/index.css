@@ -1,0 +1,25 @@
+#middle {
+    display: table-row;
+    text-align: center;
+}
+
+.middle-head {
+    font-family:Lato, sans-serif;
+}
+
+@media (max-width:991px) {
+    .middle-head {
+        font-size: 40px;
+    }
+}
+
+@media (min-width:992px) {
+    .middle-head {
+        font-size: 50px;
+    }
+}
+
+.btn-lg {
+    width:200px;
+    margin-top: 10px;
+}
